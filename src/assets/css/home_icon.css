@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+    src: url('//at.alicdn.com/t/font_2040945_z3d0dz4hcjo.eot?t=1598985443695'); /* IE9 */
+    src: url('//at.alicdn.com/t/font_2040945_z3d0dz4hcjo.eot?t=1598985443695#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMoAAsAAAAABxAAAALbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBcIFvATYCJAMMCwgABCAFhG0HPxs+BsgekiRmE0IIUFBAAMsUD/+/37d97r1ftY1KmvX7iLcBTzRINEoiQQlaipdK9xLepE5TgZQyqDgRo2PLjkPyKUoZJ4L/HxmGhXAGggSQoT44ZroUz7OtXbICIwEnONCooI3oH+SB/Jfh1S7FQz5NoG1ZNIuL0upmYK8gkwLxUpY4YF/wKYqebAr1hpVFvGWjmV6n+4A30e/Hf1DYk9QyMvPuRYkA8n+5/IrPU9WUbonAX84CfR0Zh4BCPGu0PWWVxA5ZabsSa68aqCtCWipYVUQ8T1E/6D9eIupIYRfs4njilwsnE/yKXyOBDOpJ4hbwHFTTqd+OTnvBt6W1tLa1tjY3t2B1f1cr39bCNY9uX/Zs79y+evyQVwtc+TR1QqXSfhexBW71lIVFxz99MgrinSB8snOkrGsrO/BahfVNtnY93XiEsiU7cd+u8SJAZxd36aX/w6O/2MCGctD4ydOwz29VcMjn9WvuZ258qnVfilhyn22bdV2MjMIeixGLHoUs96XIRddZzOl4o/bGpzNhoB9Adf5hdQgA+cjy+Q//G/8FFNTnkv2/2SngJ7vyFnzVxXBF83bswe/lD+wonpDoc3F4nBc4ssXEaELbc6oQ19iL6YrZ4EJC0yyDpGEJsqZNZMEeQk3HAuqajqHtQNn6jgnKSpQW9s0jCEPnIOn7CtnQA2TBPoeaue9QNwwraHscHjt2bIcMiyjmGBaQehjJPDGKzMhgXNyIJbOeo3lhhGvF1CQHUUJsfDlZho2YLjHHNCAlMiYikRIDKkXnYb2eIIUSLeZZrIYxJTMuTmz6UCxPDAA6R2EcBhMgasMQGY8wEmV/BlZ+vhEmMdPj0I6aLmsrjDKRB0cSxIofgCyTGQfVPMo7JgMkiRhGhIgowgApRRZMT2MEojQP08J4TCzNhIgiUxz0EofKYrdXGH4gV2+APJgjRY6i+UpDzDxnlOCIPGzmjHpBkQEAAA==') format('woff2'),
+    url('//at.alicdn.com/t/font_2040945_z3d0dz4hcjo.woff?t=1598985443695') format('woff'),
+    url('//at.alicdn.com/t/font_2040945_z3d0dz4hcjo.ttf?t=1598985443695') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('//at.alicdn.com/t/font_2040945_z3d0dz4hcjo.svg?t=1598985443695#iconfont') format('svg'); /* iOS 4.1- */
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-shoucang:before {
+    content: "\e60f";
+  }
+  
+  .icon-ziyuanldpi:before {
+    content: "\e630";
+  }
+  

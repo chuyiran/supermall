@@ -1,14 +1,23 @@
 <template>
-  <div id="app"></div>
+  <div id="app">
+    <keep-alive exclude="Detail">
+        <router-view></router-view>
+    </keep-alive>
+    <main-tabbar></main-tabbar>
+  </div>
 </template>
 
 <script>
-//引入全局js
+import mainTabbar from 'components/content/mainTabbar/MainTabbar'
 export default {
   name: "app",
-  components: {},
+  components: {
+    mainTabbar
+  },
 };
 </script>
+
 <style>
-  @import "assets/css/base.css";
+@import "~assets/css/base.css";
+
 </style>
