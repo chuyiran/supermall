@@ -19,9 +19,13 @@
       <detail-goods-list :goodsList="recommend" ref="recommend" />
     </scroll>
     <!-- 返回顶部按钮BackTop -->
-    <back-top @click.native="backTop" v-show="isShowBackTop" class="detail-backtop" />
+    <back-top
+      @click.native="backTop"
+      v-show="isShowBackTop"
+      class="detail-backtop"
+    />
     <!-- 底部bar bottom-bar -->
-    <detail-bottom-bar />
+    <detail-bottom-bar @addToCart="addCart" />
   </div>
 </template>
 
@@ -161,17 +165,29 @@ export default {
       let y = -position.y;
       let length = this.themeTopY.length;
       for (let i = 0; i < length; i++) {
-      if (
-      this.currentScrollIndex !== i &&
-      y >= this.themeTopY[i] &&
-      y < this.themeTopY[i + 1]
-      ) {
-      this.currentScrollIndex = i;
-      this.$refs.navbar.currentIndex = this.currentScrollIndex;
-      }
+        if (
+          this.currentScrollIndex !== i &&
+          y >= this.themeTopY[i] &&
+          y < this.themeTopY[i + 1]
+        ) {
+          this.currentScrollIndex = i;
+          this.$refs.navbar.currentIndex = this.currentScrollIndex;
+        }
       }
       //判断是否显示backTop
       this.isShowBackTop = -position.y > 1000;
+    },
+    //添加到购物车
+    addCart() {
+      //1.购物车展示的信息
+      const product={};
+      product.image =this.topImages[0];
+      product.title=this.goodsInfo.title;
+      product.desc =this.goodsInfo.desc;
+      product.price=this.goodsInfo.newPrice;
+      product.iid =this.iid;
+      //2.将商品添加到购物车
+      this.$store.dispatch("addCart",product);
     },
   },
   destroyed() {

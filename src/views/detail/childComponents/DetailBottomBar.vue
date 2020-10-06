@@ -15,8 +15,10 @@
       </div>
     </div>
     <div class="bar-item bar-right">
-      <div class="cart">加入购物车</div>
-      <div class="buy">购买</div>
+      <div class="cart" @click='addToCart'>加入购物车</div>
+      <div class="buy" >购买</div>
+      <!--<button class="cart" @click.stop='addToCart'>加入购物车</button>
+      <button class="buy" >购买</button>-->
     </div>
   </div>
 </template>
@@ -24,21 +26,31 @@
 <script>
 export default {
   name: "DetailBottomBar",
+  data(){
+    return{
+      a:2
+    }
+  },
+  methods: {
+    addToCart(){
+      this.$emit("addToCart")
+      
+    }
+  }
 };
 </script>
 
 <style scoped>
 .bottom-bar {
-  height: 58px;
-  position: relative;
+  height: 50px;
+  position: fixed;
   background-color: #fff;
-  /*left: 0;
+  left: 0;
   right: 0;
-  bottom: 0;*/
+  bottom: 0;
 
   display: flex;
   text-align: center;
-  z-index: 1000;
 }
 .bar-item {
   flex: 1;
